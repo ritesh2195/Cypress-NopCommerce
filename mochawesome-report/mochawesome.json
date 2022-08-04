@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-08-04T14:17:50.386Z",
+    "end": "2022-08-04T14:18:00.181Z",
+    "duration": 9795,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5172bafd-6e07-4ced-9eed-641a7e24bba4",
+      "title": "",
+      "fullFile": "cypress\\Integration\\examples\\LoginTest.js",
+      "file": "cypress\\Integration\\examples\\LoginTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "85660f8b-b957-4c9b-b7fe-e7c5077cff93",
+          "title": "Login Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login valid credentails",
+              "fullTitle": "Login Test Login valid credentails",
+              "timedOut": null,
+              "duration": 5003,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const pageObjectManager = new _PageObjectManager.default();\nconst homePage = pageObjectManager.getHomePage();\nconst loginPage = pageObjectManager.getLoginPage();\nconst accountPage = pageObjectManager.getMyAccountPage();\nhomePage.launchURL();\nhomePage.navigateToLoginPage();\nloginPage.doLogin(this.data.email, this.data.password);\nloginPage.navigateToMyAccountPage();\naccountPage.getEmailId().should('have.value', this.data.email);",
+              "err": {},
+              "uuid": "26b3f5cc-d1cc-4f7a-89c5-770c1450a7df",
+              "parentUUID": "85660f8b-b957-4c9b-b7fe-e7c5077cff93",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "26b3f5cc-d1cc-4f7a-89c5-770c1450a7df"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5003,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}

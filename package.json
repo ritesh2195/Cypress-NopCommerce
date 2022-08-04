@@ -1,0 +1,22 @@
+{
+  "name": "nopcommerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "search": "npx cypress run --spec 'cypress\\Integration\\examples\\SearchProductTest.js' --headed",
+    "login": "npx cypress run --spec 'cypress\\Integration\\examples\\LoginTest.js' --headed",
+    "signup": "npx cypress run --spec 'cypress\\Integration\\examples\\SignUpTest.js' --headed",
+    "datadriven": "npx cypress run --spec 'cypress\\Integration\\examples\\DataDrivenTest.js' --headed",
+    "dashboard": "npx cypress run --record --key ed9fa588-6ea7-4eb8-98e5-5ee85f82030e"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^10.3.1",
+    "mocha": "^10.0.0",
+    "mochawesome": "^7.1.3"
+  }
+}

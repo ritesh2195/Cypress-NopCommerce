@@ -29,22 +29,25 @@ describe('Searching product', function(){
 
         searchPage.selectProduct(this.data.selectedProduct)
 
+        let unitPrice;
+
         detailsPage.getProductPrice().then(function(price){
 
-           const unitPrice =  Number(price.text().trim().replace(/[^0-9\.]+/g,""))
+            unitPrice =  Number(price.text().trim().replace(/[^0-9\.]+/g,""))
 
-           detailsPage.addProductToCart(String(this.data.quantity))
+            detailsPage.addProductToCart(String(this.data.quantity))
 
-           detailsPage.navigateToCartPage()
+            detailsPage.navigateToCartPage()
 
-           cartPage.getTotalPrice().then(function(sumPrice){
+        })
+
+        cartPage.getTotalPrice().then(function(sumPrice){
 
             const totalPrice = Number(sumPrice.text().trim().replace(/[^0-9\.]+/g,""))
 
             expect(totalPrice).equal(this.data.quantity*unitPrice)
 
            })
-        })
 
     })
 })

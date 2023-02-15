@@ -1,10 +1,10 @@
-import HomePage from "../PageObject/HomePage"
-import RegisterPage from "../PageObject/RegisterPage"
-import CartPage from "../PageObject/CartPage"
-import SearchPage from "../PageObject/SearchPage"
-import LoginPage from "../PageObject/LoginPage"
-import ProductDetailsPage from "../PageObject/ProductDetailsPage"
-import MyAccount from "../PageObject/MyAccountPage"
+import HomePage from "../PageObjects/HomePage"
+import RegisterPage from "../PageObjects/RegisterPage"
+import CartPage from '../PageObjects/CartPage'
+import SearchPage from "../PageObjects/SearchPage"
+import LoginPage from "../PageObjects/LoginPage"
+import ProductDetailsPage from "../PageObjects/ProductDetailsPage"
+import MyAccount from "../PageObjects/MyAccountPage"
 
 class PageObjectManager{
 

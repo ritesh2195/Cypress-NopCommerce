@@ -5,7 +5,7 @@ describe('SignUp Test', function(){
 
     before(function(){
 
-        cy.fixture('example').then(function(data){
+        cy.fixture('signup').then(function(data){
 
             this.data = data
         })
